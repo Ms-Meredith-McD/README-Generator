@@ -1,7 +1,18 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
+async function renderLicenseBadge(license) {
+  let url;
+  if (questions.license === 'MIT'){
+    url = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+  } else if (questions.license === 'Creative Commons license family') {
+    licenseBadge = '![License](https://img.shields.io/badge/Creative-Commons-License-Family.svg)'
+  } else if (questions.license === 'Mozilla Public License 2.0') {
+    licenseBadge = '![License: GPL v3](https://img.shields.io/badge/Mozilla-Public-License-2.0.svg)'
+  } else {
+    url = ''
+  }
+  return url
+}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
