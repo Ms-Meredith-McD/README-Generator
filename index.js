@@ -1,68 +1,55 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 
 // TODO: Create an array of questions for user input
+
 const questions = [
     {
         type: 'input',
-        message: 'Please enter the title of your project.',
-        name: 'title',
-    },
-
-    {
-        type: 'input',
-        message: 'Please enter a description of your project.',
-        name: 'description',
+        message: 'Please enter name.',
+        name: 'name',
     },
     {
         type: 'input',
-        message: 'Please enter installation instuctions.',
-        name: 'installationInstructions',
+        message: 'Please enter your location.',
+        name: 'location',
     },
     {
         type: 'input',
-        message: 'Please enter usage information.',
-        name: 'usageInformation',
+        message: 'Please talk about yourself.',
+        name: 'bio',
     },
     {
         type: 'input',
-        message: 'Please enter the contribution guidelines.',
-        name: 'contributionGuidelines',
+        message: 'Please enter your LinkedIn URL.',
+        name: 'linkedIn',
     },
     {
         type: 'input',
-        message: 'Please enter the test instructions.',
-        name: 'testInstructions',
+        message: 'Please enter your GitHub URL.',
+        name: 'github',
     },
     {
         type: 'list',
-        message: 'Which license would you like to add?',
-        name: 'license',
-        choices: ['MIT License', 'Apache License 2.0', 'GNU GPL v3','Mozilla Public License 2.0','BSD 3-Clause License']
-    },
-    {
-        type: 'input',
-        message: 'Please enter your GitHub name.',
-        name: 'githubName',
-    },
-    {
-        type: 'input',
-        message: 'Please enter your email address.',
-        name: 'email',
+        message: 'What is your favorite pet?',
+        name: 'favoritePet',
+        choices: ['Cat', 'Dog', 'Fish', 'Guinea Pig', 'Hedgehog']
     }
     
-];
+]
 
 // TODO: Create a function to write README file
-function writeToFile() {
+function writeToFile(fileName, data) {
     fs.writeFile('sample.md', parseInt(questions), (err) =>
         err ? console.error(err) : console.log(questions));
 }
 
 // TODO: Create a function to initialize app
-function init() { }
-
+function init() { 
+    writeReadMe();
+}
 // Function call to initialize app
 init();
