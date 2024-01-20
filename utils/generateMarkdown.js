@@ -3,11 +3,11 @@
 async function renderLicenseBadge(license) {
   let url;
   if (questions.license === 'MIT'){
-    url = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
-  } else if (questions.license === 'Creative Commons license family') {
-    licenseBadge = '![License](https://img.shields.io/badge/Creative-Commons-License-Family.svg)'
+    url = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  } else if (questions.license === 'Apache 2.0') {
+    licenseBadge = '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   } else if (questions.license === 'Mozilla Public License 2.0') {
-    licenseBadge = '![License: GPL v3](https://img.shields.io/badge/Mozilla-Public-License-2.0.svg)'
+    licenseBadge = '![License: GPL v3](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)'
   } else {
     url = ''
   }
