@@ -35,8 +35,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please share credits for contributions.',
-        name: 'credits',
+        message: 'Please share instructions for contributors.',
+        name: 'contributors',
     },
     {
         type: 'input',
@@ -61,9 +61,9 @@ function writeToFile(fileName, data) {
         err ? console.error(err) : console.log(questions));
 }
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app, so when someone types node "name of file.js" to start it up, put something in there to get the first function to get it going
 function init() { 
     writeReadMe();
 }
-// Function call to initialize app
+// Function call to initialize app (this is done)
 init();
