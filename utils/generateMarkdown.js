@@ -15,7 +15,18 @@ async function renderLicenseBadge(license) {
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink;
+  if (questions.license === 'MIT'){
+    licenseLink = 'https://opensource.org/licenses/MIT'
+  } else if (questions.license === 'Apache 2.0') {
+    licenseLink = 'https://opensource.org/licenses/Apache-2.0'
+  } else if (questions.license === 'Mozilla Public License 2.0') {
+    licenseLink = 'https://opensource.org/licenses/MPL-2.0'
+  } else {
+    licenseLink = ''
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
