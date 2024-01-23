@@ -1,11 +1,11 @@
 
 <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg">
 
-# Hello
+# Awesome Project
 
 ## Description
 
-Fun with Flags
+Its an awesome project of awesomeness that builds a readme file in markdown according to the end users answers!
 
 ## Table of Contents
 
@@ -18,11 +18,11 @@ Fun with Flags
 
 ## Installation
 
-Download repository files, open terminal, type "node index.js"
+Download the files in whatever manner you wish, open a terminal in the same folder as the files, at the command prompt type node.js, make sure to install inquirer
 
 ## Usage
 
-Answer the questions
+Answer all the questions.
 
 ## License
 
@@ -32,12 +32,12 @@ Answer the questions
 
 ## Contributing
 
-Make a fork of the repository and submit Pull Requests, please describe contributions in detail in the comments.
+If you'd like to contribute please fork the repository and submit a detailed Pull Request (PR), thank you!
 
 ## Tests
 
-There are no tests set up for this application at this time.
+There are no tests for this application at this time.
 
 ## Questions
 
-For any questions you may email meredith.e.mcdonald@gmail.com or visit https://github.com/Ms-Meredith-McD.
+For any questions you may email test@test.com or visit https://github.com/Username.
