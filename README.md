@@ -37,3 +37,6 @@ Final product using my answers:
 
 ## Walkthrough Video 
 https://drive.google.com/file/d/1Ish_QeR1Z8d_igLAGvK5HfsQSeipMc1K/view
+
+## License
+MIT License
