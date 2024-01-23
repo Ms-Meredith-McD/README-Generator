@@ -19,7 +19,20 @@ Open a terminal inside the folder where you have downloaded the respository. In 
 
 
 ## Screenshots
+Opening a terminal within the correct folder:
 
+![Open Terminal](./images/openTerminal.png)
 
+Typing in "node index.js" to start the application on the command line:
+
+![Start Application Command](./images/startApplicationCommand.png)
+
+Terminal view after running index.js and answering the prompts:
+
+![Index JS in Node](./images/nodeIndexJS.png)
+
+Final product using my answers:
+
+![Final Sample Markdown](./images/finalSampleMarkdown.png)
 
 ## Walkthrough Video 
