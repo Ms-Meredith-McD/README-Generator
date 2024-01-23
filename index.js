@@ -63,7 +63,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app, so when someone types node "name of file.js" to start it up, put something in there to get the first function to get it going
 function init() { 
-    writeReadMe();
+    // writeReadMe();
+    generateMarkdown();
 }
 // Function call to initialize app (this is done)
 init();
