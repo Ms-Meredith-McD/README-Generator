@@ -1,4 +1,4 @@
-# README-Generator
+# README Generator
 
 ## Description
 The goal of this README Generator is to demonstrate what I have learned about nodeJS by building an application that allows the end user to easily build a README file by answering a few prompted questions.
