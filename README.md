@@ -15,7 +15,9 @@ The goal of this README Generator is to demonstrate what I have learned about no
 
 
 ## Installation
-Open a terminal inside the folder where you have downloaded the respository. In that command line, type: "node index.js"
+After you clone the project, run npm install.
+Open a terminal inside the folder where you have cloned the respository. 
+In that command line, type: "node index.js"
 
 
 ## Screenshots
