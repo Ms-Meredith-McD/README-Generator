@@ -49,22 +49,24 @@ const data = [
         name: 'github',
     },
     {
-    type: 'input',
-    message: 'What is your email address?',
-    name: 'email',
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
     }
 ]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('sample.md', parseInt(questions), (err) =>
+    fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log(questions));
 }
 
 // TODO: Create a function to initialize app, so when someone types node "name of file.js" to start it up, put something in there to get the first function to get it going
-function init() { 
-    // writeReadMe();
-    generateMarkdown();
+function init() {
+    inquirer.createPromptModule(data).then((answers) => {
+        const markdown = generateMarkdown(answers);
+        writeToFile('sample.md', markdown);
+    });
 }
 // Function call to initialize app (this is done)
 init();

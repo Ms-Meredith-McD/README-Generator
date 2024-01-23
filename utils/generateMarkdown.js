@@ -35,19 +35,21 @@ function renderLicenseSection(license) {
 const licenseBadge = renderLicenseBadge(license);
 const licenseLink = renderLicenseLink(license);
 return `
-${licenseBadge}`
+${data.license}
+Please follow the link to learn more about the license: 
+${licenseLink}`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-${licenseBadge}
+${renderLicenseBadge()}
 
-# ${data.title}
+# ${answers.title}
 
 ## Description
 
-${data.description}
+${answers.description}
 
 ## Table of Contents
 
@@ -60,20 +62,18 @@ ${data.description}
 
 ## Installation
 
-${data.install}
+${answers.install}
 
 ## License
-${data.license}
-Please follow the link to learn more about the license: 
-${licenseLink}
+${renderLicenseSection()}
 
 ## Contributors
 
-${data.contributors}
+${answers.contributors}
 
 ## Tests
 
-${data.test}
+${answers.test}
 
 ## Questions
 
