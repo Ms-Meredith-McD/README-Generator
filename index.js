@@ -45,7 +45,7 @@ const data = [
     },
     {
         type: 'input',
-        message: 'What is your GitHub URL?',
+        message: 'What is your GitHub username?',
         name: 'github',
     },
     {
@@ -58,7 +58,7 @@ const data = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.error(err) : console.log(questions));
+        err ? console.error(err) : console.log(data));
 }
 
 // TODO: Create a function to initialize app, so when someone types node "name of file.js" to start it up, put something in there to get the first function to get it going
