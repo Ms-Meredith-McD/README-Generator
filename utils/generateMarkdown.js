@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 async function renderLicenseBadge(license) {
   let licenseBadge;
-  if (data.license === 'MIT'){
+  if (answers.license === 'MIT'){
     licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-  } else if (data.license === 'Apache 2.0') {
+  } else if (answers.license === 'Apache 2.0') {
     licenseBadge = '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-  } else if (data.license === 'Mozilla Public License 2.0') {
+  } else if (answers.license === 'Mozilla Public License 2.0') {
     licenseBadge = '![License: GPL v3](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)'
   } else {
     licenseBadge = ''
@@ -17,11 +17,11 @@ async function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
-  if (data.license === 'MIT'){
+  if (answers.license === 'MIT'){
     licenseLink = 'https://opensource.org/licenses/MIT'
-  } else if (data.license === 'Apache 2.0') {
+  } else if (answers.license === 'Apache 2.0') {
     licenseLink = 'https://opensource.org/licenses/Apache-2.0'
-  } else if (data.license === 'Mozilla Public License 2.0') {
+  } else if (answers.license === 'Mozilla Public License 2.0') {
     licenseLink = 'https://opensource.org/licenses/MPL-2.0'
   } else {
     licenseLink = ''
@@ -35,13 +35,13 @@ function renderLicenseSection(license) {
 const licenseBadge = renderLicenseBadge(license);
 const licenseLink = renderLicenseLink(license);
 return `
-${data.license}
+${answers.license}
 Please follow the link to learn more about the license: 
 ${licenseLink}`
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
 ${renderLicenseBadge()}
 
