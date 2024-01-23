@@ -38,5 +38,8 @@ Final product using my answers:
 ## Walkthrough Video 
 https://drive.google.com/file/d/1Ish_QeR1Z8d_igLAGvK5HfsQSeipMc1K/view
 
+If that video is too small to see (I used Screencastify per instructions), please try this link:
+https://app.screencastify.com/v3/watch/02BgWEJ2AySXoydZEuyP
+
 ## License
 MIT License
