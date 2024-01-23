@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 async function renderLicenseBadge(license) {
-  let url;
+  let licenseBadge;
   if (questions.license === 'MIT'){
     url = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
   } else if (questions.license === 'Apache 2.0') {
@@ -9,9 +9,9 @@ async function renderLicenseBadge(license) {
   } else if (questions.license === 'Mozilla Public License 2.0') {
     licenseBadge = '![License: GPL v3](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)'
   } else {
-    url = ''
+    licenseBadge = ''
   }
-  return url
+  return licenseBadge
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -26,6 +26,7 @@ function renderLicenseLink(license) {
   } else {
     licenseLink = ''
   }
+  return licenseLink
 }
 
 // TODO: Create a function that returns the license section of README
